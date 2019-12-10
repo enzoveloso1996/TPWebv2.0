@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
+use View;
 use DB;
 
 class ProductsController extends Controller
@@ -20,7 +22,7 @@ class ProductsController extends Controller
         ->where("product_category", "Burgers")
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
-        return view('burgers')->with('products', $products);
+        return view('category/burgers')->with('products', $products);
     }
     public function breakfast()
     {
