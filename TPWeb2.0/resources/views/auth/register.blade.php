@@ -2,12 +2,17 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" >
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
+            <div class="card" id="card-login">
+                    <br>
+                    <h4 class="text-center" id="login-text">{{ __('Register') }}</h4>
+                    <hr>
+                    <div class="text-center">
+                        <img src="https://www.erbertandgerberts.com/wp-content/uploads/2016/09/pahe-header-sandwiches.png" id="register-burger">
+                    </div>
+                    <hr>
+                <div class="card-body" id="login-content">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -104,8 +109,8 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-md-6 offset-md-3">
+                                <button type="submit" class="btn btn-success btn-block">
                                     {{ __('Register') }}
                                 </button>
                             </div>

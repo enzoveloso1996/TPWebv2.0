@@ -1,17 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    @foreach($products as $product)
-    <div class="card" style="width: 18rem;">
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><h5 class="text-center">PHP {{ $product->product_price }}</h5></li>
-            <li class="list-group-item"><div class="text-center">{{ $product->product_picture }}</div></li>
-            <li class="list-group-item"><h4 class="text-center"> {{ $product->product_name }}</h4></li>
-            <li class="list-group-item"><p class="text-center">{{ $product->product_description }}</p></li>
-            <li class="list-group-item"><div class="text-center"><button class="btn btn-success btn-md btn-block">VIEW</button></div></li>
-        </ul>
+<div class="jumbotron jumbotron-fluid" id="category-banner-bundles">
+    <div class="container">
+        <h1>BUNDLES</h1>
     </div>
-    @endforeach
+</div>
+<div class="container">
+    <div class="grid">
+        @foreach($products as $product)
+        <div class="card" id="product-container">
+            <br>
+            <a><h5 class="text-center">PHP {{ $product->product_price }}</h5></a>
+            <hr>
+            <a><div class="text-center"><img src="css/images/{{ $product->product_picture }}" id="product-image" alt=""></div></a>
+            <a><h4 class="text-center"> {{ $product->product_name }}</h4></a>
+            <a><p class="text-center">{{ $product->product_description }}</p></a>
+            <a><div class="text-center"><button class="btn btn-success btn-md">VIEW</button></div></a>
+            <br>
+        </div>
+        @endforeach
+    </div>
 </div>
 @endsection

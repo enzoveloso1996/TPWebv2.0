@@ -9,14 +9,80 @@ html,body{
     padding:0;
     height:100%;
 }
+/* Navigation Bar */
+#navigation-bar{
+    background:#38c172;
+}
 #logo{
     width: 200px;
 }
-#card-signin {
+#drop-down-content{
+    background:#38c172;
+    color:white;
+}
+#drop-down-content > a:hover{
+    background:#38c172;
+}
+/* Login */
+#card-login {
     border: 0;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
     background-color:rgba(158, 192, 114, 0.7);
+}
+#login-text {
+    color:white;
+    font-size:30px;
+}
+#login-burger{
+    width:450px;
+    height:190px;
+    margin:auto;
+}
+#login-content > form > div > label {
+    color:white;
+}
+#login-content > form > div > div > input {
+    border:1px solid greenyellow;
+    border-radius:25px;
+}
+@media only screen and (max-width: 320px), (max-width: 425px){
+    #login-burger{
+        width:200px;
+        height:90px;
+        margin:auto;
+    }
+}
+/* Register */
+#register-burger{
+    width:580px;
+    height:160px;
+}
+@media only screen and (max-width: 320px), (max-width: 425px){
+    #register-burger{
+        width:200px;
+        height:90px;
+        margin:auto;
+    }
+}
+/* Product */
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 60px;
+    align-items: stretch;
+    }
+#product-container {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background-color:rgba(158, 192, 114, 0.7);
+    list-style-type: none;
+    width:18rem;
+    float:left;
+    margin:auto;
+}
+#product-image{
+    width:160px;
+    height:160px;
 }
 /* Category Banners */
 #category-banner-burger {
@@ -26,6 +92,8 @@ html,body{
     background-size: cover;
     color:white;
     opacity:0.6;
+    height:10px;
+    color:#B35249;
 }
 #category-banner-breakfast {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Breakfast.jpg');
@@ -34,6 +102,22 @@ html,body{
     background-size: cover;
     color:white;
     opacity:0.6;
+    color:white;
+    opacity:0.6;
+    height:10px;
+    color:#B35249;
+}
+#category-banner-bundle {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Breakfast.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    opacity:0.6;
+    color:white;
+    opacity:0.6;
+    height:10px;
+    color:#B35249;
 }
 #category-banner-pasta {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Pasta.jpg');
@@ -42,6 +126,10 @@ html,body{
     background-size: cover;
     color:white;
     opacity:0.6;
+    color:white;
+    opacity:0.6;
+    height:10px;
+    color:#B35249;
 }
 #category-banner-rice {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Rice.jpg');
@@ -50,12 +138,32 @@ html,body{
     background-size: cover;
     color:white;
     opacity:0.6;
+    color:white;
+    opacity:0.6;
+    height:10px;
+    color:#B35249;
 }
-#category-banner-dessert {
+#category-banner-desserts {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Dessert.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color:white;
     opacity:0.6;
+    color:white;
+    opacity:0.6;
+    height:10px;
+    color:#B35249;
+}
+#category-banner-chicken {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Dessert.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    opacity:0.6;
+    color:white;
+    opacity:0.6;
+    height:10px;
+    color:#B35249;
 }

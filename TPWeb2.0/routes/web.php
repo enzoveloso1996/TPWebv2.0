@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('burgers', 'ProductsController@burgers');
 Route::get('burgers/{id}', 'ProductsController@show')->name('view-product-detail');
 
-Route::get('chickens', 'ProductsController@chickens');
+Route::get('chickens', 'ProductsController@chicken');
 Route::get('chickens/{id}', 'ProductsController@show')->name('view-product-detail');
 
 Route::get('ricemeals', 'ProductsController@ricemeals');

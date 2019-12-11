@@ -27,7 +27,7 @@ class ProductsController extends Controller
     public function breakfast()
     {
         $products = Db::table('products')
-        ->where("product_category", "Breakfast")
+        ->where("product_category", "Breakfasts")
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
         return view('category/breakfasts')->with('products', $products);
@@ -47,14 +47,6 @@ class ProductsController extends Controller
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
         return view('category/pasta')->with('products', $products);
-    }
-    public function sadwiches()
-    {
-        $products = Db::table('products')
-        ->where("product_category", "Sandwiches")
-        ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
-        ->get();
-        return view('category/sandwiches')->with('products', $products);
     }
     public function desserts()
     {
