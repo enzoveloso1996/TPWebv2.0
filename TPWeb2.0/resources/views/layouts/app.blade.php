@@ -47,9 +47,8 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="drop-down-content">
                               <a class="dropdown-item" href="/burgers">Burgers</a>
                               <a class="dropdown-item" href="/breakfasts">Breakfast</a>
-                              <a class="dropdown-item" href="/chickens">Chicken</a>
+                              <a class="dropdown-item" href="/chicken">Chicken</a>
                               <a class="dropdown-item" href="/ricemeals">Rice Meals</a>
-                              <a class="dropdown-item" href="/sandwiches">Sandwiches</a>
                               <a class="dropdown-item" href="/pasta">Pasta</a>
                               <a class="dropdown-item" href="/desserts">Desserts</a>
                             </div>

@@ -70,14 +70,14 @@
             </div>
     </div>
     <div class="col-md-4">
-            <div class="hovereffect">
-                <img class="img-responsive" src="https://img.etimg.com/thumb/msid-70975612,width-643,imgsize-617535,resizemode-4/cola_thinkstockphotos.jpg" alt="">
-                <div class="overlay">
-                   <h2>Drinks</h2>
-                   <a class="info" href="/drinks">Order</a>
-                </div>
+        <div class="hovereffect">
+            <img class="img-responsive" src="https://s23991.pcdn.co/wp-content/uploads/2013/10/batter-fried-chicken-recipe-fp.jpg" alt="">
+            <div class="overlay">
+               <h2>Chickens</h2>
+               <a class="info" href="/drinks">Order</a>
             </div>
-    </div>
+        </div>
+</div>
 </div>
 </div>
 </div>
