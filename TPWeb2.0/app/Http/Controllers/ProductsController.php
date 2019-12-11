@@ -30,7 +30,7 @@ class ProductsController extends Controller
         ->where("product_category", "Breakfast")
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
-        return view('breakfasts')->with('products', $products);
+        return view('category/breakfasts')->with('products', $products);
     }
     public function ricemeals()
     {
@@ -38,7 +38,7 @@ class ProductsController extends Controller
         ->where("product_category", "Rice Meals")
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
-        return view('ricemeals')->with('products', $products);
+        return view('category/ricemeals')->with('products', $products);
     }
     public function pasta()
     {
@@ -46,7 +46,7 @@ class ProductsController extends Controller
         ->where("product_category", "Pasta")
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
-        return view('pasta')->with('products', $products);
+        return view('category/pasta')->with('products', $products);
     }
     public function sadwiches()
     {
@@ -54,7 +54,7 @@ class ProductsController extends Controller
         ->where("product_category", "Sandwiches")
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
-        return view('sandwiches')->with('products', $products);
+        return view('category/sandwiches')->with('products', $products);
     }
     public function desserts()
     {
@@ -62,7 +62,7 @@ class ProductsController extends Controller
         ->where("product_category", "Desserts")
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
-        return view('desserts')->with('products', $products);
+        return view('category/desserts')->with('products', $products);
     }
     public function chicken()
     {
@@ -70,20 +70,20 @@ class ProductsController extends Controller
         ->where("product_category", "Chicken")
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
-        return view('chicken')->with('products', $products);
+        return view('category/chicken')->with('products', $products);
     }
     public function bundle(){
         $products = Db::table('products')
         ->where("product_category", "Bundles")
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
-        return view('bundles')->with('products', $products);
+        return view('category/bundles')->with('products', $products);
     }
     public function show($productid){
         $products = Db::table('products')
         ->where("id", $productid)
         ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
         ->get();
-        return view('order')->with('products', $products);
+        return view('category/order')->with('products', $products);
     }
 }

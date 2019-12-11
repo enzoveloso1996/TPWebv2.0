@@ -31,7 +31,7 @@ Route::get('ricemeals/{id}', 'ProductsController@show')->name('view-product-deta
 Route::get('desserts', 'ProductsController@desserts');
 Route::get('desserts/{id}', 'ProductsController@show')->name('view-product-detail');
 
-Route::get('bundle', 'ProductsController@bundle');
+Route::get('bundles', 'ProductsController@bundle');
 Route::get('bundle/{id}', 'ProductsController@show')->name('view-product-detail');
 
 Route::get('pasta', 'ProductsController@pasta');

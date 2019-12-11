@@ -1,0 +1,61 @@
+html,body{
+    font-family:"Monserrat", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://images.summitmedia-digital.com/esquiremagph/images/2019/05/28/Oldest-Restaurant-Chains-TROPICAL-HUT-01.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#logo{
+    width: 200px;
+}
+#card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background-color:rgba(158, 192, 114, 0.7);
+}
+/* Category Banners */
+#category-banner-burger {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Burgers.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    opacity:0.6;
+}
+#category-banner-breakfast {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Breakfast.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    opacity:0.6;
+}
+#category-banner-pasta {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Pasta.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    opacity:0.6;
+}
+#category-banner-rice {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Rice.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    opacity:0.6;
+}
+#category-banner-dessert {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Dessert.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    opacity:0.6;
+}
