@@ -113,5 +113,23 @@
 
 <!--Twitter Bootstrap-->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("d-block img-fluid");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 1000); // Change image every 2 seconds
+    }
+}
+});
+</script>
 </body>
 </html>
