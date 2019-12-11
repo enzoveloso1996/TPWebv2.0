@@ -128,6 +128,18 @@ html,body{
     height:10px;
     color:#B35249;
 }
+#category-banner-about {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('http://www.paolofeliciano.com/wp-content/uploads/2014/05/105_img.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    opacity:0.6;
+    color:white;
+    opacity:0.6;
+    height:10px;
+    color:#B35249;
+}
 #category-banner-bundle {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('css/assets/Breakfast.jpg');
     background-repeat: no-repeat;

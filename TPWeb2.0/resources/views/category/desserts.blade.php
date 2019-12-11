@@ -15,7 +15,7 @@
             <hr>
             <a><div class="text-center"><img src="css/images/{{ $product->product_picture }}" id="product-image" alt=""></div></a>
             <a><h4 class="text-center" id="product-name"> {{ $product->product_name }}</h4></a>
-            <a><div class="text-center"><button class="btn btn-success btn-md">VIEW</button></div></a>
+            <div class="text-center"><a class="btn btn-success btn-md" id="view-button">VIEW</a></div>
             <br>
         </div>
         @endforeach

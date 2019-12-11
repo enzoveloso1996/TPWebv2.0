@@ -15,9 +15,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('about', function () {
+    return view('about');
+});
+
+Route::get('/order', function(){
+    return view('order');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+route::resource('order','ProductsController@store')->middleware('auth');
 
 Route::get('burgers', 'ProductsController@burgers');
 Route::get('burgers/{id}', 'ProductsController@show')->name('view-product-detail');
@@ -35,7 +45,7 @@ Route::get('bundles', 'ProductsController@bundle');
 Route::get('bundle/{id}', 'ProductsController@show')->name('view-product-detail');
 
 Route::get('pasta', 'ProductsController@pasta');
-Route::get('pasta/{id}', 'ProductController@show')->name('view-product-detail');
+Route::get('pasta/{id}', 'ProductsController@show')->name('view-product-detail');
 
 Route::get('breakfasts', 'ProductsController@breakfast');
-Route::get('breakfasts/{id}', 'ProductController@show')->name('view-product-detail');
+Route::get('breakfasts/{id}', 'ProductsController@show')->name('view-product-detail');
