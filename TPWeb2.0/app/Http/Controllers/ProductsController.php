@@ -71,11 +71,10 @@ class ProductsController extends Controller
         ->get();
         return view('category/bundles')->with('products', $products);
     }
-    public function show(){
-        $products = Db::table('products')
-        ->where("id", $productid)
-        ->select("id", "product_name", "product_category",  "product_description", "product_price", "product_picture")
-        ->get();
-        return view('order')->with('products',$products);
+    public function show($id=null)
+    {
+        $product = Product::where('id','=',$id)->first();
+    
+        return view('order')->with("product",$product);
     }
 }

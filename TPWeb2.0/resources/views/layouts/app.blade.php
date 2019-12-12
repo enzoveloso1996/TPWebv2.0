@@ -127,8 +127,6 @@
       x[myIndex-1].style.display = "block";  
       setTimeout(carousel, 1000); // Change image every 2 seconds
     }
-}
-});
 </script>
 </body>
 </html>

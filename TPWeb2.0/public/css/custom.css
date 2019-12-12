@@ -42,6 +42,13 @@ html,body{
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
     background-color:rgba(158, 192, 114, 0.7);
 }
+#card-order {
+    width:1000px;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background-color:rgba(158, 192, 114, 0.7);
+}
 #login-text {
     color:white;
     font-size:30px;
@@ -200,6 +207,18 @@ html,body{
     height:10px;
     color:#B35249;
 }
+#category-banner-mycart {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 9)), url('https://thumbor.thedailymeal.com/99WVibClZ9xl6JArD_No3FGKKOM=/870x565/filters:focal(2144x1424:2145x1425)/https://www.thedailymeal.com/sites/default/files/2017/07/05/Hero_Healthy%20Cart%20Under%2050_Shutterstock_edit.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    opacity:0.6;
+    color:white;
+    opacity:0.6;
+    height:10px;
+    color:#B35249;
+}
 /* Carousel */
 .carousel-caption {
     padding-bottom: 12%;
@@ -305,4 +324,63 @@ html,body{
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+  }
+  /* Order */
+  #sizes {
+    font-size: 20px;
+    text-align:left; 
+  }
+  .product-show-description{
+    color:black;
+    font-weight: 400;
+  }
+  .required{
+    color: #EB7F6B;
+  }
+  .quantity-input{
+    width: 200px;
+    text-align: center;
+  }
+  
+  .product-quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product > h3 {
+    display: flex;
+    align-self: center;
+  }
+  .product-description{
+    padding: 0px 10px 0px;
+  }
+  .product-price{
+    display: flex;
+    justify-content: center;
+  }
+  #header{
+    color: White;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background-color:rgba(158, 192, 114, 0.7);
+    margin-top: 25px;
+  }
+  /* Cart */
+  .table-header{
+    color:white;
+    font-style:bolder;
+    font-size:25px;
+    text-align:center;
+  }
+  .ord-ord{
+    list-style-type: none;
+  }
+  .table-body{
+    color:black;
+    font-style:normal;
+    font-size:20px;
+    text-align:center;
+  }
+  #proceed{
+      float:right;
   }

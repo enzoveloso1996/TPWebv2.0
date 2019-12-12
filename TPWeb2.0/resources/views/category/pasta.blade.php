@@ -15,8 +15,7 @@
             <hr>
             <a><div class="text-center"><img src="css/images/{{ $product->product_picture }}" id="product-image" alt=""></div></a>
             <a><h4 class="text-center" id="product-name"> {{ $product->product_name }}</h4></a>
-            <div class="text-center"><a class="btn btn-success btn-md" id="view-button">VIEW</a></div>
-            <br>
+            <div class="text-center"><a class="btn btn-success btn-md" href="{{ route('view-product-detail',['id'=>$product->id]) }}">VIEW</a></div>
         </div>
         @endforeach
     </div>
